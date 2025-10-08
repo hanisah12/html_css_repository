@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.nav-links a:hover {
+  background-color: #34495e;
+}
+.join-btn {
+  background-color: #e74c3c;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.join {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.radio-group label {
+  font-weight: normal;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+@media (max-width: 992px) {
+  nav {
+    padding: 0 1rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+  .form-container {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+  .join {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+  }
+  .form-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+  button {
+    width: 100%;
+  }
+  .radio-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    text-align: center;
+  }
+  nav {
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .form-container {
+    margin: 0.5rem;
+    padding: 0.75rem;
+  }
+  .join {
+    font-size: 1.5rem;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+  .enroll-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}

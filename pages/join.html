@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Our Academy - Learn Loop</title>
+    <link rel="stylesheet" href="/style/join.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Learn Loop</div>
+        <div class="nav-links">
+          <a href="/index.html">Home</a>
+          <a href="../pages/join.html" class="join-btn">Join Our Academy</a>
+          <a href="../pages/contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+    <div class="form-container">
+      <h1 class="join">Join Our Academy</h1>
+      <form action="/pages/submit.html" method="get">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="graduate">Enter your Graduate degree:</label>
+          <input type="text" id="graduate" name="graduate" required />
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label>
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="Male"
+                required
+              />
+              Male
+            </label>
+            <label>
+              <input type="radio" id="female" name="gender" value="Female" />
+              Female
+            </label>
+            <label>
+              <input type="radio" id="other" name="gender" value="Other" />
+              Other
+            </label>
+          </div>
+        </div>
+        <div style="text-align: center"> 
+          <a href="/pages/submit.html">
+            <button type="submit">Submit Application</button></a
+          >
+        </div>
+      </form>
+    </div>
+    <footer>
+      <h1>About Us</h1>
+      <p>
+        Learn Loop is a coding academy designed to help students master web
+        development skills through structured lessons in HTML, CSS, and
+        JavaScript.
+      </p>
+      <p>&copy; 2025 Learn Loop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

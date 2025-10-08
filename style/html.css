@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.nav-links a:hover {
+  background-color: #34495e;
+}
+.join-btn {
+  background-color: #e74c3c;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.language-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.language-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.language-header {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.level-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.level-card h2 {
+  color: #8e44ad;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.qa-list {
+  list-style: none;
+}
+
+.qa-list li {
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.answer {
+  color: #555;
+  margin-left: 0.5rem;
+}
+.enroll-btn {
+  display: inline-block;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.enroll-btn:hover {
+  background-color: #34495e;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+  nav {
+    padding: 0 1rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+  .language-header h1 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 1.5rem;
+  }
+  .level-card {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+  }
+  .language-header h1 {
+    font-size: 1.8rem;
+  }
+  .language-header {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  main {
+    padding: 1rem;
+  }
+  .level-card {
+    padding: 1rem;
+  }
+  .qa-list li {
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    text-align: center;
+  }
+  nav {
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .language-header h1 {
+    font-size: 1.5rem;
+  }
+  .question {
+    font-size: 1rem;
+  }
+  .answer {
+    font-size: 0.9rem;
+  }
+  .enroll-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
